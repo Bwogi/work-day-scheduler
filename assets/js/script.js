@@ -33,12 +33,21 @@ $(".time-block").each(function() {
 
 });
 
+// enter today's events and save them to local storage 
+$(".saveBtn").on('click', function() {
+    var theTimeInBlock = $(this).parent().attr("id");
+    var description = $(this).siblings(".description").val().trim();
+    console.log(description)
+    localStorage.setItem(theTimeInBlock, description);
+});
+
+
+// recall the day 's event events from local storage 
+
 // Save the day's date? 
 var checkDate = moment().format('L');
 console.log(checkDate);
 localStorage.setItem("savedDate", checkDate);
-
-
 
 // check if calendar has changed from one day to another 
 var dateInStorage = localStorage.getItem("savedDate");
@@ -46,9 +55,3 @@ var dateInStorage = localStorage.getItem("savedDate");
 if (checkDate != dateInStorage) {
     localStorage.clear();
 }
-
-
-
-
-
-// when button is clicked
