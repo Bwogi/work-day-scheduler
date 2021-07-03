@@ -1,5 +1,3 @@
-// const { parseTwoDigitYemergear } = require("moment");
-
 var saveBtnEl = document.querySelector('.saveBtn');
 var currentDayEl = document.querySelector("#currentDay");
 
