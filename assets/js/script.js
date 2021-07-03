@@ -1,11 +1,11 @@
-// const { parseTwoDigitYear } = require("moment");
+// const { parseTwoDigitYemergear } = require("moment");
 
 var saveBtnEl = document.querySelector('.saveBtn');
 var currentDayEl = document.querySelector("#currentDay");
 
 // DOM header day date addition
 var timeNow = moment().format('LLLL');
-console.log(timeNow)
+console.log(timeNow);
 $("#currentDay").text(timeNow);
 
 // what is the time now(hourly)?
@@ -23,13 +23,15 @@ $(".time-block").each(function() {
         $(this).addClass("past");
         $(this).remove("future");
         $(this).remove("present");
+        $(this).find("textarea").attr("disabled", true);
+        $(this).find("button").attr("disabled", true);
     } else if (hourBlock > checkTime) {
         $(this).addClass("future");
         $(this).remove("past");
         $(this).remove("present");
     }
 
-})
+});
 
 // Save the day's date? 
 var checkDate = moment().format('L');
