@@ -31,7 +31,7 @@ This is a simple calendar application that allows a user to save events for each
  ![Webpage](https://github.com/Bwogi/Work-day-scheduler/blob/main/assets/images/Screen%20Shot%202021-07-03%20at%204.16.39%20PM%20(2).png)
 
 ### Persistent Storage
-This screenshot shows that the events are stored in localStorage
+This screenshot shows how the events are stored in localStorage
 
 #### Screenshot
  ![Webpage](https://github.com/Bwogi/work-day-scheduler/blob/main/assets/images/Screen%20Shot%202021-07-03%20at%204.44.53%20PM%20(2).png)
